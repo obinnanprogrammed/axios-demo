@@ -1,28 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   // TODO: Add event handling to get message from backend when button is clicked
+  const [name, setName] = useState("");
   
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
       <div className="card">
-        {/* TODO: Alter button so that it will retrieve message from backend on click */}
-        <button>
-          FIXME
-        </button>
-        {/* TODO: here the message received from the backend will go here. */}
+        <form>
+          <p>Enter your name:</p>
+          <input type="text" onChange={(e) => setName(e.target.value)}></input>
+          {/* TODO: Alter button so that it will retrieve message from backend on click */}
+          <input type="submit" value="Submit"></input>
+        </form>
+        <div>
+          {/* TODO: here the message received from the backend will go here. */}
+        </div>
       </div>
     </>
   )

@@ -1,2 +1,2 @@
 # axios-demo
-For front-end: Open terminal, call npm install to install packages, and npm run dev to run application.
+For front-end: Open terminal, call npm install to install packages, and npm run dev to run application. Also install axios: npm install axios
